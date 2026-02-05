@@ -1,0 +1,66 @@
+/* Verify page styles - uses global theme from index.css */
+
+.verify-container {
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.btn-verify:hover {
+    background: linear-gradient(135deg, var(--primary-light) 0%, #0F5F8F 100%);
+    border-color: var(--primary);
+}
+
+.status-msg {
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.result-box {
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: var(--radius-lg);
+    border: 1.5px solid transparent;
+}
+
+.result-success {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(16, 185, 129, 0.02) 100%);
+    border-color: var(--success-light);
+    color: var(--success);
+}
+
+.result-fail {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(239, 68, 68, 0.02) 100%);
+    border-color: var(--danger-light);
+    color: var(--danger);
+}
+
+.result-header {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: inherit;
+}
+
+.result-detail {
+    font-size: 14px;
+    margin-top: 8px;
+    color: inherit;
+    font-weight: 500;
+}
+
+.hash-text {
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 12px;
+    word-break: break-all;
+    margin-top: 8px;
+    padding: 8px;
+    background-color: var(--bg1);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-weight: 600;
+}
